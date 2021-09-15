@@ -15,10 +15,19 @@ export default function Edit(props) {
         else {
             if(editDesc.length < 25){
                 alert('Description should be minimum of 25 characters.')
+            }else{
+            let regExp = /^[A-Za-z]+$/;
+                if (!title.match(regExp)) {
+                    alert("Please enter letters only in title.");
+                }
+                else {
+                    props.editToDo(props.updateToDoData.toDoId , editTitle ,editDesc,editCategory);
+                    setEditTitle("");
+                    setEditDesc("");
+                    setEditCategory("todo")     
+                }
             }
-            let newEdit = {
 
-            }
             props.editToDo(props.updateToDoData.toDoId , editTitle ,editDesc,editCategory);
             setEditTitle("");
             setEditDesc("");
