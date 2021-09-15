@@ -21,17 +21,17 @@ export default function Edit(props) {
                     alert("Please enter letters only in title.");
                 }
                 else {
+                let regExp = /^[A-Za-z]+$/;
+                if (!editTitle.match(regExp)) {
+                    alert("Please enter letters only in title.");
+                }
+                else {
                     props.editToDo(props.updateToDoData.toDoId , editTitle ,editDesc,editCategory);
                     setEditTitle("");
                     setEditDesc("");
                     setEditCategory("todo")     
                 }
             }
-
-            props.editToDo(props.updateToDoData.toDoId , editTitle ,editDesc,editCategory);
-            setEditTitle("");
-            setEditDesc("");
-            setEditCategory("todo")
         }
     }
     return (
