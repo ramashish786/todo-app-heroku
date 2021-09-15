@@ -15,12 +15,8 @@ export default function Edit(props) {
         else {
             if(editDesc.length < 25){
                 alert('Description should be minimum of 25 characters.')
-            }else{
-            let regExp = /^[A-Za-z]+$/;
-                if (!editTitle.match(regExp)) {
-                    alert("Please enter letters only in title.");
-                }
-                else {
+            }
+            else {
                 let regExp = /^[A-Za-z]+$/;
                 if (!editTitle.match(regExp)) {
                     alert("Please enter letters only in title.");
@@ -32,6 +28,7 @@ export default function Edit(props) {
                     setEditCategory("todo")     
                 }
             }
+            
         }
     }
     return (
