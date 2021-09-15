@@ -17,7 +17,7 @@ export default function Edit(props) {
                 alert('Description should be minimum of 25 characters.')
             }else{
             let regExp = /^[A-Za-z]+$/;
-                if (!title.match(regExp)) {
+                if (!editTitle.match(regExp)) {
                     alert("Please enter letters only in title.");
                 }
                 else {
