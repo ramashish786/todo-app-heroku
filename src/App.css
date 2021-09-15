@@ -1,0 +1,145 @@
+ .flex-container{
+  display: flex;
+  justify-content: space-around;
+  height:fit-content ;
+  margin-top: 30px;
+}
+
+
+@media screen and (max-width:400px) {
+  .flex-container{
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+}
+
+.board{
+  position: relative;
+  margin-left:20px;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  background:rgba(29, 22, 22,0.4);
+  width:300px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow:5px 5px 5px #c23f2e;
+}
+
+.card-container .text-center{
+  color: white;
+}
+.board h1{
+  color: rgb(247, 12, 12);
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.add-btn{
+  color: white;
+  margin: 0;
+  background-color: rgb(235, 128, 28);
+  position: relative;
+  text-align: center;
+  left:242px;
+  font-size: 25px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.item{
+  border-radius: 5px;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: 5px 2px 7px #4d6456;
+}
+.title{
+  margin-bottom: 10px;
+}
+.title p{
+  margin:0;
+}
+
+.title p:first-child{
+color: rgb(241, 239, 245);
+font-size: 12px ;
+position: relative;
+top:0;
+}
+.desc p{
+  margin:0;
+  word-break: break-all;
+}
+.desc p:first-child{
+  color: rgb(225, 223, 231);
+  font-size: 12px ;
+  position: relative;
+  top:0;
+ }
+
+.icons{
+float:right;
+display: flex;
+}
+
+.btn{
+  border: none;
+  color: rgb(252, 250, 250);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.delete-btn{
+     background-color: tomato;
+            }
+.edit-btn{
+  background-color: rgb(61, 107, 207);
+}
+ 
+
+ .card-container >  :nth-child(4n + 1) {
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+}
+
+.card-container > :nth-child(4n + 2) {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 12, 241, 1) 0%,
+    rgba(250, 0, 135, 1) 100%
+  );
+} 
+
+.card-container > :nth-child(4n + 3) {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+}   
+
+/* .icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.edit-icon {
+  color: #fff;
+} */ 
